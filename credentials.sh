@@ -12,7 +12,7 @@ git commit -m "$message"
 
 echo " INPUT <branch_name>"
 read branch_name
-git push --set-upstream origin $branch_name "tarun-kochar" ""
+git push --set-upstream origin $branch_name
 
 #suppling credentials
 send tarun-kochar
