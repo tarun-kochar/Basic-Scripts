@@ -15,7 +15,9 @@ read branch_name
 git push --set-upstream origin $branch_name
 
 #suppling credentials
+\n
 send tarun-kochar
+\n
 send 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
 
     if [ $? -eq 0 ]
