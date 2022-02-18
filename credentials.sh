@@ -12,11 +12,11 @@ git commit -m "$message"
 
 echo " INPUT <branch_name>"
 read branch_name
-git push --set-upstream origin $branch_name
+git push --set-upstream origin $branch_name "tarun-kochar" "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"
 
 #suppling credentials
-read tarun-kochar
-read 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
+#tarun-kochar
+#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
 
     if [ $? -eq 0 ]
     then 
