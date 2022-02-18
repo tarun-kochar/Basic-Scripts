@@ -1,10 +1,10 @@
 #!/bin/bash
 
 # supply credntials to push on github
-echo "***Updating history to local***\n"
+echo "***Updating history to local and pushing changes to github***\n"
 history >> history.txt
 
-echo "***Updating history to local***\n"
+
 
 #***add->commit->push->Username-Password***"
 
