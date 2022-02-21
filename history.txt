@@ -1,0 +1,597 @@
+History for this session
+    1  sudo apt-get update
+    2  cd Downloads ls
+    3  cd Downloads/
+    4  sudo dpkg -i Unconfirmed 841104.crdownload
+    5  date
+    6  date -h
+    7  date --help
+    8  date -r
+    9  date --r
+   10  date --help
+   11  date %a
+   12  date -%a
+   13  date -r
+   14  q
+   15  man date
+   16  cal
+   17  cal -jy
+   18  man cal
+   19  pwd
+   20  ls
+   21  cd ..
+   22  ls
+   23  pwd
+   24  root
+   25  cd  Downloads/
+   26  cd Downloads/
+   27  cd..
+   28  cd
+   29  cd 
+   30  cd Downloads/
+   31  ls
+   32  cd..
+   33  cd
+   34  cd Downloads/
+   35  mkdir MyFolder1
+   36  ls
+   37  cd
+   38  /Documents/
+   39  cd Documents/
+   40  mkdir MyFolder1
+   41  mkdir MyFolder2
+   42  cd MyFolder1
+   43  mkdir myData.txt
+   44  ls
+   45  gedit myData.txt
+   46  cp myData.txt myData_1.txt
+   47  mkdir F1
+   48  mkdir F2
+   49  mkdir F3
+   50  ls
+   51  cp myData.txt myData_1.txt
+   52  cp myData.txt myData1.txt
+   53  ls
+   54  cp myData.txt ../MyFolder2/
+   55  cd..
+   56  .
+   57  ..
+   58  cd..
+   59  cd
+   60  cd Documents/MyFolder2/
+   61  ls
+   62  cd..
+   63  cd MyFolder2/
+   64  cd..
+   65  cd-
+   66  ..cd
+   67  cd
+   68  cd Documents/
+   69  cd..
+   70  cd MyFolder1/
+   71  cp -R MyFolder1 myFolder2/
+   72  cd -R MyFolder1 myFolder2/
+   73  cd -R MyFolder1 MyFolder2/
+   74  cd - R MyFolder1 MyFolder2/
+   75  cd ..
+   76  cd -R MyFolder1 MyFolder2/
+   77  ls
+   78  cd -R MyFolder1 MyFolder2/
+   79  ls
+   80  cd -R MyFolder1 MyFolder2/
+   81  cd MyFolder2/
+   82  ls
+   83  cd ..
+   84  cp -R MyFolder1 MyFolder2/
+   85  cd MyFolder2/
+   86  ls
+   87  cd MyFolder1/
+   88  ls
+   89  ls -ll
+   90  cd ..
+   91  cd MyFolder1/
+   92  ls -ll
+   93  cat long.txt
+   94  cat
+   95  touch ironman
+   96  ls
+   97  echo
+   98  echo "I am superman" > ironman
+   99  cat ironman
+  100  echo "No, I'm spider man" > ironman
+  101  cat ironman
+  102  echo "Hi" > mymessage.txt
+  103  ls
+  104  cat mymessage.txt
+  105  clear
+  106  nano n1.txt
+  107  cat n1.txt
+  108  nano n1.txt
+  109  vi
+  110  cd Documents/MyFolder2/
+  111  touch abc{1..9}pqr.txt
+  112  ls -ll
+  113  touch abanother.jpg
+  114  ls
+  115  ls -ll
+  116  ls ab*
+  117  ls a[bc]*
+  118  /
+  119  ls
+  120  cd /
+  121  ls -ll
+  122  ls
+  123  cd binary/
+  124  cd Binary/
+  125  cd Binary
+  126  cd bin/
+  127  ls
+  128  cd/
+  129  cd /
+  130  cd Documents
+  131  cd Documents/
+  132  cd Home/Documents/
+  133  cd Home
+  134  cd ..
+  135  pwd
+  136  cd lib/
+  137  pwd
+  138  ls
+  139  cd ..
+  140  cd code/
+  141  cd ..
+  142  cd home/
+  143  ls
+  144  cd user
+  145  ls
+  146  cd ..
+  147  cd innovaccer/
+  148  ls
+  149  cd ..
+  150  cd innovaccer/
+  151  ls -ll
+  152  cd ..
+  153  cd home/
+  154  cd user/
+  155  pwd
+  156  ls
+  157  cd /
+  158  cd media
+  159  ls
+  160  cd ..
+  161  cd mnt
+  162  ls
+  163  cd ..
+  164  alias cls=clear
+  165  pwd
+  166  cls
+  167  unalias
+  168  unalias cls
+  169  cls
+  170  hostname tarun
+  171  echo $USER
+  172  free -h
+  173  free -m
+  174  free -b
+  175  free -l
+  176  free --tera
+  177  cd Documents/
+  178  ls
+  179  cd MyFolder1/
+  180  free -h > ram.txt
+  181  head ram.txt
+  182  cat ram.txt
+  183  echo ram.txt
+  184  df -h
+  185  history
+  186  free -h
+  187  ifconfig
+  188  apt install net-tools
+  189  sudo apt install net-tools
+  190  man iconfig
+  191  man ifconfig
+  192  if config
+  193  ifconfig
+  194  sudo apt clean
+  195  cd /
+  196  sudo -i
+  197  apt clean
+  198  cd Documents/MyFolder1/
+  199  ls 
+  200  ls -ll
+  201  ls -li
+  202  ls
+  203  cd ..
+  204  mkdir symlink
+  205  cd /symlink/
+  206  cd symlink/
+  207  ls -li
+  208  cd ../../
+  209  cd Documents/
+  210  ls -ll
+  211  ls -l
+  212  whoami
+  213  chmod 000 Linux_trainer
+  214  ls -ll
+  215  cat Linux_trainer
+  216  nano Linux_trainer
+  217  chown root Linux_trainer
+  218  sudo chown root Linux_trainer
+  219  ls -ll
+  220  shutdown now
+  221  cd Documnets/
+  222  cd Documnets
+  223  cd Documents
+  224  groups
+  225  sudo groupadd innogeeks
+  226  cd ..
+  227  cd etc/
+  228  cd /
+  229  cd etc/
+  230  cat group
+  231  usermod --help
+  232  sudo usermod -a -G innogeeks user
+  233  cat groups
+  234  cat group
+  235  groups user
+  236  id
+  237  useradd tarun
+  238  sudo useradd tarun
+  239  groups
+  240  cat group
+  241  sudo usermod -a -G innogeeks tarun
+  242  cat groups
+  243  cat group
+  244  cd /
+  245  cd etc
+  246  groups
+  247  sudo passwd
+  248  sudo passwd tarun
+  249  cd etc/
+  250  cd /
+  251  cd etc
+  252  sudo cat sudoers
+  253  cd / 
+  254  cd Home/
+  255  cd Home
+  256  cd ..
+  257  systemctl list-units --all
+  258  ps -e
+  259  ps -fu user
+  260  top
+  261  top -u user
+  262  top -u innovaccer
+  263  top -u user
+  264  ping google.com
+  265  ping facebook.com
+  266  nslookup 157.240.198.35
+  267  curl
+  268  curl google.com
+  269  cd Documents
+  270  ls
+  271  chmod 744
+  272  chmod 744 ping.sh
+  273  ls -ll
+  274  ./ping.sh
+  275  df -h | grep -v tmpfs
+  276  df -h | grep -v /dev*
+  277  du -ah /home/user/Documents/ |sort -nr
+  278  du -ah /home/user/Documents/ |sort -nr | head
+  279  lsmen
+  280  cat /proc/meminfo
+  281  cat /proc/meminfo -ah
+  282  lasmem
+  283  lsmem
+  284  vmstat
+  285  top
+  286  pmap 416779
+  287  dmdecode
+  288  dmidecode
+  289  sudo dmidecode
+  290  lscpu
+  291  lsmem
+  292  cat /proc/cpuinfo
+  293  sudo apt install sysstat
+  294  iostat -y -5
+  295  iostat -y -5 -h
+  296  iostat -y -5 3
+  297  ifconfig
+  298  tcpdump -i
+  299  tcpdump -i enp0s31f6
+  300  sudo tcpdump -i enp0s31f6
+  301  ss -plnt
+  302  netstat -plnt
+  303  uptime
+  304  cd /
+  305  cd var
+  306  cd log
+  307  ls
+  308  cat dpkg.log.1
+  309  cat dmesg.log.1
+  310  cat dpkg
+  311  cat dpkg.log
+  312  tail -20 dpkg.log
+  313  cd \
+  314  cd /
+  315  cd Documents
+  316  cd Home/Documents
+  317  cd Home
+  318  cd user/Home
+  319  cd user
+  320  ls
+  321  cd home
+  322  cd Documents
+  323  ls
+  324  cd user/Documents
+  325  cd/
+  326  cd /
+  327  cd /var/log
+  328  sudo apt install ufw
+  329  systemctl start ufw
+  330  systemctl status ufw
+  331  sudo ufw app list
+  332  sudo ufw status
+  333  sudo ufw enable
+  334  sudo ufw status
+  335  shutdown now
+  336  cd /
+  337  cd mnt
+  338  cd media
+  339  ls
+  340  ls -ll
+  341  ls
+  342  cd /
+  343  ls
+  344  cd var
+  345  ls
+  346  cd log
+  347  ls-ll
+  348  ls -ll
+  349  cd /
+  350  ls
+  351  cd home
+  352  cd Documents
+  353  cd documents
+  354  ls
+  355  cd user
+  356  cd Documents
+  357  ls
+  358  cd MyFolder1
+  359  ls
+  360  cd ../MyFolder2/
+  361  ls
+  362  ls abc[(-1)123]*.txt
+  363  ls abc[-1123]*.txt
+  364  ls abc[-11234]*.txt
+  365  clear]
+  366  clear
+  367  ls
+  368  ls abc[-11234]*.txt
+  369  ls -ll abc[-11234]*.txt
+  370  ls -ll abc[1-234]*.txt
+  371  printenv
+  372  echo tarun
+  373  echo $GNOME_TERMINAL_SERVICE=:1.225
+  374  echo $GNOME_TERMINAL_SERVICE
+  375  history
+  376  echo tarun
+  377  clear]
+  378  clear
+  379  ls
+  380  ls abc[-11234]*.txt
+  381  ls -ll abc[-11234]*.txt
+  382  ls -ll abc[1-234]*.txt
+  383  printenv
+  384  echo tarun
+  385  history
+  386  printenv && clear
+  387  history
+  388  printenv && clear 
+  389  ps
+  390  exit
+  391  git status
+  392  git
+  393  cd /
+  394  ls -ll | grep git
+  395  ls -ll | grep 'git
+  396  clear
+  397  git --version
+  398  ls
+  399  exit'
+  400  exit
+  401  pwd
+  402  whoami
+  403  ls
+  404  cd Documents
+  405  mkdir projects
+  406  cd projects
+  407  cd Documents
+  408  mkdir mygitproject
+  409  cd mygitproject
+  410  git init
+  411  sudo apt-get install git
+  412  ls'
+  413  ls
+  414  git init
+  415  ls -a
+  416  git --version
+  417  git status
+  418  git remote add origin https://github.com/tarun-kochar/firstrepository.git
+  419  echo "this is first line for git" >> first.txt
+  420  ls
+  421  git add first.txt
+  422  ls
+  423  cat first.txt
+  424  ls 
+  425  ls -ll
+  426  ls -a -ll
+  427  git status
+  428  git commit
+  429  git commit -m "Posted by Tarun at the first commit"
+  430  git config --global user.name  "tarun-kochar"
+  431  git commit -m "Posted by Tarun at the first commit"
+  432  git config --global user.email "tarun.kochar@gmail.com"
+  433  git commit -m "Posted by Tarun at the first commit"
+  434  git status
+  435  git push
+  436  git push --set-upstream origin master
+  437  ls
+  438  rm -rf first.txt
+  439  ls
+  440  git clone https://github.com/tarun-kochar/firstrepository.git
+  441  ls
+  442  nano first.txt
+  443  cat
+  444  cat first.txt
+  445  ls
+  446  cd firstrepository
+  447  ls
+  448  cat first.txt
+  449  nano first.txt
+  450  cat first.txt
+  451  git add .
+  452  git push
+  453  git push --set-upstream origin master
+  454  git commit
+  455  git commit -m "sec commit"
+  456  git push --set-upstream origin master
+  457  echo "fourth line by soemone" >> first.txt
+  458  cat first.txt
+  459  echo "fith line by soemoine" >> first.txt
+  460  cat first.txt
+  461  git add .
+  462  git stash
+  463  cat first.txt
+  464  git add .
+  465  git commit
+  466  git push
+  467  git push --set-upstream origin master
+  468  cd ..
+  469  cd firstrepository
+  470  git branch
+  471  git branch branch1
+  472  git branch
+  473  ls
+  474  echo "this is the second file" >> second.txt
+  475  ls
+  476  cat second.txt
+  477  git checkout branch1
+  478  git branch
+  479  ls
+  480  echo "Third txt" >> third.txt
+  481  ls
+  482  git add .
+  483  git commit -m "third txt file added commit"
+  484  git push --set-upstream origin branch1
+  485  ls
+  486  git checkout master
+  487  ls
+  488  git checkout branch1
+  489  ls
+  490  git branch
+  491  git checkout master
+  492  shutdown now
+  493  git status
+  494  cd Documents/
+  495  ls
+  496  cd mygitproject
+  497  ls
+  498  cd firstrepository
+  499  ls
+  500  git status
+  501  ls
+  502  cd Documents
+  503  ls
+  504  cd mygitrepository
+  505  cd mygitproject
+  506  ls
+  507  ls -ll
+  508  mkdir gitassignment
+  509  ls
+  510  git init
+  511  ls
+  512  cd gitassignment
+  513  ls
+  514  git init
+  515  ls -a
+  516  git remote add origin https://github.com/tarun-kochar/Basic-Scripts.git
+  517  ls
+  518  ls -a
+  519  ./github.sh
+  520  ping github.com
+  521  ./github.sh
+  522  sudo ./github.com
+  523  sudo ./github.sh
+  524  cd ../..
+  525  ls
+  526  ./ping.sh
+  527  cd mygitproject/gitassignment
+  528  ls
+  529  ./github.sh
+  530  ls -ll
+  531  chmod 764 github.sh
+  532  ls -ll
+  533  ./github.sh
+  534  ping github.com
+  535  ./github.sh
+  536  ping github.com
+  537  ls
+  538  ./github.sh
+  539  git add github.sh
+  540  git conifg --global user.name "Tarun-Kochar"
+  541  git config --global user.name "Tarun-Kochar"
+  542  git add .
+  543  git commit -m "Connection Checking"
+  544  git push --set-upstream origin master
+  545  ls
+  546  rm assignment1.sh
+  547  ls
+  548  git branch
+  549  git branch gitcommands
+  550  git branch
+  551  git checkout
+  552  ls
+  553  history
+  554  git add .
+  555  git stash
+  556  git bracnh
+  557  git branch
+  558  checkout gitcommands
+  559  gti checkout gitcommands
+  560  git checkout gitcommands
+  561  git add .
+  562  git commit
+  563  git push
+  564  git push --set-upstream origin gitcommands
+  565  ./credentials.sh
+  566  ls -ll
+  567  chmod 764 credentials.sh
+  568  ls -ll
+  569  ./credentials.sh
+  570  git branch
+  571  ./credentials.sh
+  572  git branch history
+  573  checkout history
+  574  git checkout history
+  575  mv credentials.sh log.sh
+  576  ls
+  577  rm credentials.sh
+  578  ls
+  579  echo "History for this session" >> history.txt
+  580  ls
+  581  ls -ll
+  582  history
+  583  history >> history.txt
+              total        used        free      shared  buff/cache   available
+Mem:           15Gi       2.1Gi       3.0Gi       373Mi        10Gi        12Gi
+Swap:         2.0Gi          0B       2.0Gi
+ 09:48:22 up 22 min,  1 user,  load average: 2.41, 2.39, 2.01
+ 09:48:22 up 22 min,  1 user,  load average: 2.41, 2.39, 2.01
+              total        used        free      shared  buff/cache   available
+Mem:           15Gi       2.1Gi       2.9Gi       382Mi        10Gi        12Gi
+Swap:         2.0Gi          0B       2.0Gi
+ 09:49:30 up 24 min,  1 user,  load average: 2.63, 2.45, 2.06
+ 09:49:30 up 24 min,  1 user,  load average: 2.63, 2.45, 2.06
+***********************
+ 10:35:49 up  1:10,  1 user,  load average: 2.76, 2.67, 2.39
+ 10:35:49 up  1:10,  1 user,  load average: 2.76, 2.67, 2.39
