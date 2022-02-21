@@ -1,5 +1,12 @@
 #!/bin/bash
 
+# getting memory detials of user
+free -h >> history.txt
+
+# uptime
+"uptime" >> history.txt
+uptime >> history.txt
+
 # supply credntials to push on github
 echo "***Updating history to local and pushing changes to github***\n"
 history >> history.txt
@@ -25,3 +32,4 @@ git push --set-upstream origin $branch_name
     echo "***Error!***"
     fi
 
+"***********************" >> history.txt
