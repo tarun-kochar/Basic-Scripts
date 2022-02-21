@@ -587,3 +587,8 @@ Mem:           15Gi       2.1Gi       3.0Gi       373Mi        10Gi        12Gi
 Swap:         2.0Gi          0B       2.0Gi
  09:48:22 up 22 min,  1 user,  load average: 2.41, 2.39, 2.01
  09:48:22 up 22 min,  1 user,  load average: 2.41, 2.39, 2.01
+              total        used        free      shared  buff/cache   available
+Mem:           15Gi       2.1Gi       2.9Gi       382Mi        10Gi        12Gi
+Swap:         2.0Gi          0B       2.0Gi
+ 09:49:30 up 24 min,  1 user,  load average: 2.63, 2.45, 2.06
+ 09:49:30 up 24 min,  1 user,  load average: 2.63, 2.45, 2.06

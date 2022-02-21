@@ -32,4 +32,4 @@ git push --set-upstream origin $branch_name
     echo "***Error!***"
     fi
 
-"***********************" >> history.txt
+echo "***********************" >> history.txt
