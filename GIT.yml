@@ -1,0 +1,36 @@
+GIT 
+-------------------------
+  - What is GIT?
+    - VCS
+  - Differece between GIT and GitHub?
+    - GIT is an SCM server software which powers the GIT framewok.
+    - GITHUB is one of the SAAS provider company, like GITLAB, bitbucket, etc.
+    -
+
+  - Commands
+    - Create an empty local repository inside of a local folder/
+      - git init
+    - create a remote repository with remote repository by 
+      - git remote add origin <repo url>
+    - Add and track the file in git using
+      - git add <filename>
+    - Configure the git for the first time.
+      - git config --global user.email "you@example.com"
+      - git config --global user.name "Your Name"
+    - Save the commit by 
+      - git add .
+      - git commit -m "Message"
+    - Push the commit to the remote origin / server
+      - git push
+      - git push --set-upstream origin master
+    - Github Token = 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
+    - Optionally we can clone the repository.
+    - git stash --> to revert the unstaged changes
+  
+  - Branching 
+    - 
+
+
+
+    
+

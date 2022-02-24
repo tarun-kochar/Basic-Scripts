@@ -1,0 +1,294 @@
+LINUX
+-----------------------------
+- Some important points
+  - Linux is not an OS. It's a middle layer between hardware and user.
+  - Android uses Linux OS.
+  - Google bought Android in 2003/4, android uses linux as a kernel.
+  - Linux is more centric about CLI (command line interface), not on UI.
+  - Terminal <=> Shell.
+  - Linux has a root user which is kind of super user and has authority to delete or modify anything.
+  - Linux is case sensitive.
+  - Fidora's GUI is not interactive.  
+  - Linux Tedora are upgrading only Linux KERNEL.
+
+- File System
+  - Windows store files in chunk.
+  - D, E, F drives are just a logical representation.
+
+  - File System Format (used by windows)
+    - FAT16 
+    - FAT32
+    - NTFS (Network File System / Open Source)
+
+  - File System Format (LINUX)
+    - EXT3
+    - EXT4
+    - XFS
+    - NTFS
+    - FAT
+
+  - NTFS is compatible with cross file transfer.
+  - MAC doesn't support NTFS but can locate when connected to private network.
+  - Some drivers are available for mac to open files located on NTFS.
+
+- What is root?
+  - Root Account -> Most powerful user account / Adminstrator account.
+  - Root Path as / -> This is the first directory, also known as root directory.
+  - Root Home /root -> Home directory of Root User.
+
+- BASIC COMMAMDS
+  - date (Linux + Windows)
+  * date --help
+  * man date (opens date documentation) 
+  - cal (calendar)
+  - clear / CLTR + L
+  - pwd (shows current location)
+  - cd (change directory)
+  - cd.. (outside of folder)
+  - mkdir (create new folder)
+  - ls (show files inside current folder)
+  - cp (copy files from one location to other) (cp source destination)
+  * if not provide new name, it will use the same name when copying to other folder.
+  - copy one folder inside other - cp -R MyFolder1 MyFolder2/ - (recurrsive).
+  * -R is required to recurrsively copy all the content of the folder, basically when multilevel/ multichild.
+  - mv -R (move, can be used for renaming by movign file to same location with different name).
+  - rm (delete a single file)
+  * rm File1 File2 -> delete File1 and File2
+  - rm -rf -> forecful removal
+  - mv (rename the file)
+  - unlink (removes the file)
+  - rmdir (alternate to rm -rf)
+  - ls -ll/-ltr (gives details)
+  - ls -a (Show hidden files).
+  * ***EXPLORE -ll
+  - cat (release the contnet of file) (for readable files onyl)
+  - head (similar to cat, shows top 10 lines of a file).
+  * head -n 3 filename.txt (prints top 3 line)
+  - tail -n 3 filename.txt (prints last 3 lines).
+  - touch filename (creates a EMPTY file without extension).
+  - echo (print to console).
+  * echo "Lorem Ipsum canopy..." > filename -> creates a file (if not exists) and puts the string in it.
+  - '>>'' adds one more line, doesn't overrites like '>'.
+  * write the content >, read the content <.
+  * shell is not for multitasking, you have to open new shell.
+  - nano -> built in editor.
+  - vi -> VIM -> old editor.
+  * {} -> for loop
+  - rmdir (delete a folder).
+  - ln ->link
+
+- WildCard Character
+  - * -> it represents zero or more characters.
+  * ls abc*.txt -ll -> returns all file names with txt extension.
+  * ls ab*.* -ll -> returns files starting with ab
+  - ? -> represents single charater.
+  * ls abc?pqr.txt
+  - [] -> range 
+  * touch abc{1..9}pqr.txt
+
+- File system structure
+  - bin -> executables are located
+  - boot -> static files needed during booting.
+  - device -> all the drivers.
+  - dev -> device related drivers.
+  - etc -> host related, configuraton related.
+  - home -> user directories.
+  - lib -> stores shared libraries used by different executables in lib.
+  - mnt -> file gets created after connecting pendrive, whichever external device is mounted.
+  - sbin -> kernel related binaries.
+  - tmp -> temporary files (caching).
+  - usr -> utilies user installs.
+  - var -> contains source code.
+
+- Common Commands
+  - alias (create shortcut to any command).
+  - unalias.
+  * alias cls=clear.
+  * scope of alias is to same terminal.
+  - hostname newname.
+  - shutdown now. (dont use).
+  - shutdown -r
+  - echo $env_varaibale.
+  - printenv --> (print all the env variables).
+  - MYKEY=MYVAL --> Setting up an new variable in environment.
+  * -h (converts in human readable format).
+  - df -h (check physical availibility)
+  - df -h | grep -v tmpfs (removes tmpfs)
+  - history
+  - !number (run the number index command from history).
+  - lscpu
+  - ifconfig (to get IP).
+  - sudo apt-get remove net-tools (remove package).
+  - ifconfig --vresion.
+  - apt-get remove <package name>
+  * update local software -> sudo apt upgrade
+  - sudo apt update -> updates the local definition of software on machine.
+  * yum (mot available on ubuntu, is similar to apt-get, used to install and remove softwares).
+  - apt-get purge --> This also removes the configuration by the package, similar to remove but also remove configuration files.
+  - sudo apt clean --> clean every local cache folder.
+  - sudo apt clean --> reomve corrupted files and partially downlaoded files.
+
+-Symlinks
+  - What is Inode?
+      - a pointer/ memory locaton for a file/ folder.
+  - Hard Symlink
+    - ln loaction/filename
+  - Soft Symlink 
+    - ln -s 
+
+- File Permission
+  - 3 Types of Permission
+    - r --> read
+    - w --> write
+    - x --> EXECUTE (run permisson for executable files, .sh files are executable).
+
+  - 3 Levels where the permissions can be applied/ configured
+    - u --> user level
+    - g --> group level
+    - o --> others (everyone on system)
+  - ls -l -rw-rw-r--  
+          User                         Group          Others
+        read write(delete)        read write(delete)       read 
+
+  - chmod (alter permissions)
+  * chmod 000
+  * chmod 600
+  * chmod 777 --> very dangerous
+
+  - FILE OWNERSHIP
+    - 2 types of user who can own a file.
+      - owned by a user who owned the group.
+      - owned by a user who owns the file.
+    
+    - To change the owner user of the file
+      - sudo chown new_owner <filename>
+
+    - To change the owner group of a file
+      sudo chgrp new_group <filename>
+    
+    - To delete user
+      sudo userdel -r username #use -r if home folder is to be removed.
+
+    Tarun is a part of group DEveloper group
+      - a.txt owned by Tarun user
+      - b.txt owned by Developer Group
+    Tarun owns both.
+
+  * A folder is created under Home directory, when new user is created.
+  - groups (groups, user is listed in).
+  - groups is basically a executables in bin directory.
+
+  - sudo groupadd <new_group_name>
+  - find group in etc folder using cat group.
+  - usermod (change the password, add user to group).
+  * sudo usermod -a -G <group_name> <username>
+
+- Add new user
+  - useradd 
+  - sudo useradd -m <newusername> (able to open desktop)
+
+- update password
+  - sudo passwd <username>
+
+- login with shell
+  - su - <username>
+- sudo userdel <username> // remove the user from system but not delete the home directory of that user.
+- sudo userdel -r <username> // deletes everything.
+- sudo cat sudoers. (user, part of sudoer group is root).
+
+
+- Processes and jobs
+  - Application/ Service --> It's a program in your computer.
+  - Script --> written in a file or file apackage in a way it can be executed. Like Shell Script/ Bash Script.
+  - Process --> When you run an application, a process get created for the application , its also generates pID.
+  - Daemon --> Somnething runs in the background and execute a sevice until the service compltes the work. Example : alarm.
+  - Thread - Every process cana have one or more threads associaetd with it. 
+  - Job - It runs a service/ Application or Process on the scheduled on a given time. Job Management. CRON JOB.
+
+  * Application --> Process --> Thread1, Thread2, Thread3.
+
+- COMMANDS
+  - systemctl - > open / closebackground/ foreground process.
+  * sudo systemctl start <service_name>.
+  * sudo systemctl stop <service_name>.
+  * systemctl status <service_name>.
+  * systemctl restart <service_name>.
+  - sudo service <service_name> start. (systemctl is newer version).
+  - sudo systemctl disable <service_name>.
+  - sudo systemctl enable <service_name>.
+  - systemctl list-units --all(shows all services).
+  - ps (current process executed on terminal).
+  - ps -e(current active/ running process).
+  - ps -aux (in detailed format).
+  - ps -fu <user> (shows services executed by user).
+  - top (shows running/ realtime processes).
+  - top -u <username> (processes owned by current user/ username).
+  - after top , k [pid] (kills the processes).
+  * ps -e | grep 'search text' (grep can be used anywhere).
+  * kill <process_id>, to kill a proces.
+  * kill -9 <pid> (to enforce killing process).
+
+
+- SSH configuration
+  * Install Open SSH web server (service)
+    - sudo apt install openssh-server
+    - sudo systemctl start ssh
+  - ssh <target_username>@<ip_address> (to connect to different machine).
+   * it willneed target password.
+  
+- Ping Command
+  - ping google.com (tell dns address)
+  - dnslokup <address>
+  - curl <website> (allow us to call remote file and see what that file represents).
+  * curl -o <url> (downlaods the content).
+  - wget <web url> (downlaods the file, also downloads the HTML File).
+
+- Script
+  - In editor start with #!/bin/bash
+  - ./<script_name> (to execute script file)
+
+- Memory Management Commands
+  - df -h
+  - df -h | grep -v tmpfs
+  - du -ah / (list out all the file folder and subfolder in root).
+  - du -ah /home/user/Documents/ | sort -nr (sort in descending order).
+
+- Processes
+  - top
+  - free -h (RAm and virtual memory(swap)).
+  - lsmem (architect of RAM/ blocks of RAM).
+  - cat -proc/meminfo (every classififcation of RAM, from hardware / layer perspective || reads info from meminfo folder).
+  - vmstat (swap memory details).
+  - pmap <pid> (RAM Consumption, to check who is consuming the ram and then kill the high consumption process, to detect malware).
+  - sudo dmidecode (hardware info).
+  - lscpu (CPU usage / gives info about socket, buses).
+  - cat /proc/cpuinfo (written data in physical file).
+  - iostat -y <seconds> (disk management details after every seconds)
+  
+- Network Commands
+  - ifconfig (also gives NIC card)
+  - sudo tcpdump -i <network id> | grep "search text" (gives traffic going through network command).
+  - netstat -plnt (active internet connection).
+  - ss -plnt (active internet connection).
+
+- Misc.
+  - uptime.
+  - Logs --> /var/logs
+  - tail -20 <logFiles>.log
+
+- Firewall
+  - iptables --> older version.
+  -   
+  - ufw --> uncomplicated fire wall
+    - sudo apt install ufw
+    - systemctl start ufw
+    - ufw enable
+    - sudo ufw allow <port Address>
+
+- Todo
+  - Install RPM files.
+  - check rpm vs deb.
+  - Creativity on shell script (developen shell script).
+  - Put script on github.
+  
+
